@@ -1,0 +1,185 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f4f4f4;  
+}
+
+h1, h2 {
+    color: #4B0082;  
+    margin-bottom: 20px;  
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 200px; 
+    height: 100vh;  
+    position: fixed;  
+    background-color: #4B0082;  
+    color: white; 
+    padding-top: 20px;  
+    top: 0;  
+    left: 0;  
+    text-align: center; 
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); 
+}
+
+.sidebar h2 {
+    margin-bottom: 20px; 
+}
+
+.sidebar ul {
+    list-style-type: none;  
+    padding: 0;  
+}
+
+.sidebar ul li {
+    padding: 15px;  
+    text-align: center;  
+}
+
+.sidebar ul li a {
+    color: white;  
+    text-decoration: none; 
+    display: block;  
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #9370DB;  
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 220px;  
+    padding: 20px;  
+    width: calc(100% - 220px);  
+    background-color: white;  
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    min-height: 100vh; 
+}
+
+/* Form and Container Styles */
+.container, .form-container, .add-category, .all-categories, .date-range, .add-product, .add-sale, .report-results {
+    text-align: center;  
+    padding: 20px;  
+    background-color: white;  
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    margin-bottom: 20px;  
+}
+
+label {
+    display: block;  
+    margin-bottom: 10px; 
+    font-weight: bold;
+    color: #4B0082;  
+}
+
+input[type="text"], input[type="number"], input[type="date"], select, input[type="email"], input[type="password"] {
+    width: 100%;  
+    padding: 10px;  
+    margin-bottom: 20px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px;  
+}
+
+button, .button {
+    padding: 10px 20px; 
+    background-color: #4B0082;  
+    color: white;  
+    border: none;  
+    border-radius: 5px; 
+    cursor: pointer;  
+    transition: background-color 0.3s ease; 
+}
+
+button:hover, .button:hover {
+    background-color: #9370DB;  
+}
+
+.inline-form {
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center; 
+}
+
+.inline-form input[type="text"] {
+    width: 70%;  
+    padding: 5px;  
+}
+
+.inline-form .btn {
+    padding: 10px 20px;  
+    background-color: #4B0082;  
+    color: white;
+    border: none; 
+    border-radius: 5px;  
+    cursor: pointer;  
+    transition: background-color 0.3s ease;  
+}
+
+.inline-form .btn:hover {
+    background-color: #9370DB;
+}
+
+.inline-form .btn-edit {
+    background-color: #f39c12; 
+}
+
+.inline-form .btn-delete {
+    background-color: #e74c3c;  
+}
+
+.success {
+    color: green; 
+}
+
+.error {
+    color: red; 
+}
+
+/* Table Styles */
+table {
+    width: 100%;  
+    border-collapse: collapse; 
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;  
+    text-align: left; 
+}
+
+th {
+    background-color: #4B0082;
+    color: white; 
+}
+
+td {
+    background-color: #fff; 
+}
+
+/* Specific Page Backgrounds */
+.signup {
+    background-color: #e0f7fa; 
+}
+
+.login {
+    background-color: #ffe0b2;  
+}
+
+/* Additional Styling */
+.buttons {
+    display: flex; 
+   justify-content: center; 
+    gap: 20px;  
+}
